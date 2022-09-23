@@ -2,11 +2,11 @@ import { useCart } from '../../contents/cart';
 import CartTotal from './CartTotal';
 
 function CartFooter({ ...restProps }) {
-  const { total } = useCart();
+  const { totalPrice } = useCart();
 
   return (
     <footer {...restProps}>
-      <CartTotal>{ total }</CartTotal>
+      <CartTotal>{ totalPrice }</CartTotal>
     </footer>
   );
 }
